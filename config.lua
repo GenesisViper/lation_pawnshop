@@ -4,7 +4,7 @@ Config = {} -- Do not alter
 -- 🛒 Shop Now: https://lationscripts.com
 -- 💬 Join Discord: https://discord.gg/9EbY4nM5uu
 -- 😢 How dare you leave this option false?!
-Config.YouFoundTheBestScripts = false
+Config.YouFoundTheBestScripts = true
 
 ----------------------------------------------
 --        🛠️ Setup the basics below
@@ -20,7 +20,7 @@ Config.Setup = {
     -- Target system, available options are: 'ox_target', 'qb-target', 'qtarget', 'custom' & 'none'
     -- 'custom' needs to be added to client/functions.lua
     -- If 'none' then TextUI is used instead of targeting
-    target = 'none',
+    target = 'ox_target',
     -- Notification system, available options are: 'ox_lib', 'esx', 'qb', 'okok' & 'custom'
     -- 'custom' needs to be added to client/functions.lua
     notify = 'ox_lib',
@@ -30,7 +30,7 @@ Config.Setup = {
     -- 'auto_clear' is a system to automatically clear shops after certain amount of time
     auto_clear = {
         -- Do you want to enable the auto clearing system?
-        enable = false,
+        enable = true,
         -- If enable = true, how long (in minutes) should shops be cleared?
         interval = 60
     }
@@ -59,7 +59,7 @@ Config.Shops = {
             -- What items can be sold here
             -- Any item not in this list, cannot be sold here
             -- ['itemSpawnName'] = { label = 'Item Name', price = sellPrice }
-            ['water'] = { label = 'Water', price = 50 },
+            ['microwave'] = { label = 'Water', price = 50 },
             ['panties'] = { label = 'Knickers', price = 10 },
             ['lockpick'] = { label = 'Lockpick', price = 25 },
             ['phone'] = { label = 'Phone', price = 150 },
@@ -91,7 +91,7 @@ Config.Shops = {
         hour = { min = 6, max = 21 },
         account = 'cash',
         allowlist = {
-            ['water'] = { label = 'Water', price = 50 },
+            ['microwave'] = { label = 'Water', price = 50 },
             ['panties'] = { label = 'Knickers', price = 10 },
             ['lockpick'] = { label = 'Lockpick', price = 25 },
             ['phone'] = { label = 'Phone', price = 150 },
